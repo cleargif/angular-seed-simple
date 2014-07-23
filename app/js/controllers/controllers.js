@@ -16,9 +16,22 @@ angular.module('myApp.controllers', [])
     function ($scope) {
       console.log('CtrlContact init');
     }
-  ]).controller('Ctrl404', ['$scope',
-    function ($scope) {
+  ]).controller('Ctrl404', ['$scope', '$materialDialog',
+    function ($scope, $materialDialog) {
       console.log('Ctrl404 init');
+      $scope.dialog = function (e) {
+        $materialDialog({
+          templateUrl: 'views/modals/my-dialog.html',
+          targetEvent: e,
+          controller: ['$scope', '$hideDialog',
+            function ($scope, $hideDialog) {
+              $scope.close = function () {
+                $hideDialog();
+              };
+            }
+          ]
+        });
+      };
     }
   ]);
 
