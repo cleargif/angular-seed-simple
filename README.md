@@ -1,4 +1,9 @@
-# angular-seed — the seed for AngularJS apps
+
+
+# Based on angular-seed — the seed for AngularJS apps
+
+## Includes
+* [Angular Bootstrap 3](http://angular-ui.github.io/bootstrap/)
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -12,23 +17,23 @@ The seed app doesn't do much, just shows how to wire two controllers and views t
 
 ## Getting Started
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+To get you started you can simply clone the angular-seed-simple repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the angular-seed repository. You can get it from
+You need git to clone the angular-seed-simple repository. You can get it from
 [http://git-scm.com/](http://git-scm.com/).
 
 We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone angular-seed-simple
 
-Clone the angular-seed repository using [git][git]:
+Clone the angular-seed-simple repository using [git][git]:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
+git clone https://github.com/cleargif/angular-seed-simple
+cd angular-seed-simple
 ```
 
 ### Install Dependencies
@@ -70,33 +75,46 @@ Now browse to the app at `http://localhost:8000/app/index.html`.
 
 ## Directory Layout
 
-    app/                --> all of the files to be used in production
-      css/              --> css files
-        app.css         --> default stylesheet
-      img/              --> image files
-      index.html        --> app layout file (the main html template file of the app)
-      index-async.html  --> just like index.html, but loads js files asynchronously
-      js/               --> javascript files
-        app.js          --> application
-        controllers.js  --> application controllers
-        directives.js   --> application directives
-        filters.js      --> custom angular filters
-        services.js     --> custom angular services
-      partials/             --> angular view partials (partial html templates)
-        partial1.html
-        partial2.html
+    app/                      --> all of the files to be used in production
+      css/                      --> css files
+        app.css                  --> default stylesheet
+      img/                      --> image files
+      index.html                --> app layout file (the main html template file of the app)
+      index-async.html          --> just like index.html, but loads js files asynchronously
+      js/                       --> javascript files
+        app.js                    --> application
+        controllers/              --> application controllers
+          controllers.js            --> controllers
+        directives/               --> application directives
+          directives.js             --> directives
+        filters/                  --> custom angular filters
+          filters.js                  --> custom angular filter
+        services/                 --> custom angular services
+          services.js               --> custom angular service
+      views/                    --> Views
+        partials/                 --> angular view partials (partial html templates)
+          404.html
+          about.html
+          contact.html
+          home.html
+        navigation/               --> Component views
+          nav-main.html
 
-    test/               --> test config and source files
-      protractor-conf.js    --> config file for running e2e tests with Protractor
-      e2e/                  --> end-to-end specs
+    test/                       --> test config and source files
+      protractor-conf.js        --> config file for running e2e tests with Protractor
+      e2e/                      --> end-to-end specs
         scenarios.js
-      karma.conf.js         --> config file for running unit tests with Karma
-      unit/                 --> unit level specs/tests
-        controllersSpec.js      --> specs for controllers
-        directivessSpec.js      --> specs for directives
-        filtersSpec.js          --> specs for filters
-        servicesSpec.js         --> specs for services
+      karma.conf.js             --> config file for running unit tests with Karma
+      unit/                     --> unit level specs/tests
+        controllersSpec.js          --> specs for controllers
+        directivessSpec.js          --> specs for directives
+        filtersSpec.js              --> specs for filters
+        servicesSpec.js             --> specs for services
 
+
+
+
+# TO DO: Update README below this point
 
 ## Testing
 
