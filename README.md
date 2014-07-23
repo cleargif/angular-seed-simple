@@ -1,4 +1,9 @@
-# angular-seed — the seed for AngularJS apps
+
+
+# Based on angular-seed — the seed for AngularJS apps
+
+## Includes
+* [Angular Bootstrap 3](http://angular-ui.github.io/bootstrap/)
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
